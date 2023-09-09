@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.content-item {
+    width: 45%; /* Adjust as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+}
+
+footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ... existing styles ... */
+
+#scrollToTop {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#scrollToTop:hover {
+    background-color: #0056b3;
+}
+
+.flash-hide {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, 0);
+    border-radius: 5px;
+}
+
+.flash-show {
+    display: block;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body.dark-theme {
+    background-color: #222;
+    color: #ddd;
+}
+
+nav.dark-theme a, button.dark-theme {
+    color: #bbb;
+}
+
+.dashboard {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}

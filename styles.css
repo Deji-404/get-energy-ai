@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-color: #f0f0f0;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+#services, #products {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.service-item, .product-item {
+    border: 1px solid #CCC;
+    padding: 2rem;
+    margin: 1rem;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.service-item:hover, .product-item:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
